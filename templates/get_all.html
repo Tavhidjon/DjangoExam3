@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get all expens</title>
+</head>
+<body>
+<div class="a1">
+    {% for expen in expens %}
+    <div class="a2">
+        <h1>Id: {{expen.id}}</h1>
+        <h1>User: {{expen.user}}</h1>
+        <p>Date: {{expen.date}}</p>
+        <p>Category: {{expen.category}}</p>
+        <p>Amount: {{expen.amount}}</p>
+        <p>Description: {{expen.description}}</p>
+        {% endfor %}
+</div>
+</div>
+</body>
+</html>
